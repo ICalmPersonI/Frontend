@@ -1,0 +1,49 @@
+body {
+    background-color: cornflowerblue;
+}
+.container {
+    left: 30%;
+    position: fixed;
+    top: 30%;
+}
+
+.white-keys {
+    display: flex;
+    flex-direction: row;
+    position:absolute;
+}
+
+.black-keys {
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+    margin-left: 85px;
+    position:absolute;
+    z-index: 1;
+}
+
+.white-key {
+    background-color: white;
+    border: 5px solid black;
+    display: table-cell;
+    height: 350px;
+    line-height: 600px;
+    font-size: 40px;
+    text-align: center;
+    width: 100px;
+}
+
+.black-key {
+    background-color: black;
+    color: white;
+    display: table-cell;
+    font-size: 40px;
+    height: 200px;
+    line-height: 300px;
+    text-align: center;
+    width: 50px;
+}
+
+.black-key:nth-child(3) {
+    margin-left: 110px;
+}
