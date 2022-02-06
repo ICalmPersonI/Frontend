@@ -1,0 +1,118 @@
+body {
+    background-image: url("images/space.png");
+}
+
+#planet {
+    position: relative;
+    right: 20px;
+    top: 325px;
+    z-index: 1;
+}
+
+#rocket {
+    bottom: -15px;
+    position: relative;
+    right: 300px;
+    transform: rotate(30deg);
+}
+
+@keyframes rocket-launch {
+    from {
+        bottom: -15px;
+        right: 300px;
+    }
+
+    to {
+        bottom: 700px;
+        right: -100px;
+    }
+}
+
+.control-panel {
+    background-image: repeating-linear-gradient(
+            45deg,
+            black,
+            yellow 10px,
+            yellow 20px,
+            black 30px,
+            black 40px
+    );
+    bottom: 30%;
+    display: flex;
+    flex-direction: row;
+    height: 400px;
+    justify-content: center;
+    left: 50%;
+    position: absolute;
+    width: 550px;
+}
+
+.control-panel__inner {
+    background-color: #303030;
+    display: flex;
+    flex-direction: column;
+    gap: 13px 20px;
+    height: 350px;
+    margin-top: 20px;
+    width: 500px;
+}
+
+.input-area {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#password {
+    background-color: black;
+    border: 2px solid yellow;
+    border-radius: 12px;
+    color: white;
+    height: 23px;
+    width: 250px;
+}
+
+#ok {
+    background-color: yellow;
+    border: 2px solid yellow;
+    border-radius: 12px;
+    color: black;
+    font-size: 20px;
+}
+
+.check-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-left: 20px;
+    margin-right: 20px;
+    transform: scale(1.1);
+}
+
+.levers {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.slider {
+    height: 150px;
+    transform: rotate(270deg);
+    width: 90px;
+}
+
+#launch {
+    background-color: red;
+    border: 2px solid white;
+    border-radius: 45%;
+    color: white;
+    font-size: 20px;
+    height: 60px;
+    margin: 0 auto;
+    text-align: center;
+    width: 120px;
+}
