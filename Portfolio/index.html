@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul id="full-size-menu">
+                <li class="full-size-menu-item"><a href="#about">About me</a></li>
+                <li class="full-size-menu-item"><a href="#portfolio">Portfolio</a></li>
+                <li class="full-size-menu-item"><a href="#contacts">Contacts</a></li>
+                <li class="full-size-menu-item"><a href="#home">Home</a></li>
+                <input id="hamburger-button" type="image" src="images/hamburger.svg">
+            </ul>
+            <ul class="hamburger">
+                <li class="hamburger-item"><a href="#about">About me</a></li>
+                <li class="hamburger-item"><a href="#portfolio">Portfolio</a></li>
+                <li class="hamburger-item"><a href="#contacts">Contacts</a></li>
+                <li class="hamburger-item"><a href="#home">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="home">
+        <h1>FirstName LastName, Front-end developer</h1>
+    </section>
+    <section id="about">
+        <div id="about-container">
+            <img src="images/person.png" width="250", height="250">
+            <div>
+                <h2>About me</h2>
+                <p>Hi, I`m FirstName LastName. I`ve been a junior front-end developer for 5 months now.</p>
+                <p>For me, programming is not just a job, it`s a hobby.</p>
+                <p>I`m open to new knowledge, I like to study new technologies and apply them in practice.</p>
+                <p><b>Skills:</b> HTML, CSS, JS, React.</p>
+            </div>
+        </div>
+    </section>
+    <section  id="portfolio">
+        <div class="window">
+
+        </div>
+        <div id="portfolio-container">
+            <h2>Portfolio</h2>
+            <div id="portfolio-projects">
+                <div class="project">
+                    <button class="open-window" onclick="showWindow('flashCards')">About Project</button>
+                    <img class="project-image-fc" src="images/project1.png" width="1908" height="873">
+                    <p>Flashcards</p>
+                </div>
+                <div class="project">
+                    <button class="open-window" onclick="showWindow('virtualPiano')">About Project</button>
+                    <img class="project-image-vp" src="images/project2.png" width="250" height="170">
+                    <p>Virtual Piano</p>
+                </div>
+            </div>
+        </div>
+    </section >
+    <section  id="contacts">
+        <div id="contacts-container">
+            <h2>Contacts</h2>
+            <p>
+                You contact me at
+                <a href="mailto:test@hyperskill.org">mailto:test@hyperskill.org</a>
+            </p>
+            <p>
+                or phone number - <a href="tel:+12345678910">+12345678910</a>
+            </p>
+            <div id="links">
+                <img src="images/github.svg" height="64" width="64">
+                <img src="images/facebook.svg" height="64" width="64">
+                <img src="images/twitter.svg" height="64" width="64">
+                <img src="images/instagram.svg" height="64" width="64">
+            </div>
+        </div>
+    </section >
+    <footer>
+        <p>FirtName LastName</p>
+        <p>2022</p>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
